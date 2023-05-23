@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fun.funmedia.mapper.UserMapper">
+    <!--int insertUser();-->
+    <insert id="insertUser">
+        insert into f_user values(null,'admin','123456',23,'男','12345@qq.com')
+    </insert>
+
+    <!--int updateUser();-->
+    <update id="updateUser">
+        update f_user set user_name = 'root',password='123' where user_id = 2
+    </update>
+
+    <!--int deleteUser();-->
+    <delete id="deleteUser">
+        delete from f_user where user_id = 3
+    </delete>
+
+    <!--User getUserById();-->
+    <select id="getUserById" resultType="com.fun.funmedia.pojo.User">
+        select * from f_user where user_id = 1
+    </select>
+
+    <!--List<User> getAllUser();-->
+    <select id="getAllUser" resultType="com.fun.funmedia.pojo.User">
+        select * from f_user
+    </select>
+</mapper>
