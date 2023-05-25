@@ -2,17 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="496fb595-ce11-43e2-9ebe-e04e01e67f1e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/fun/funmedia/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fun/funmedia/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/fun/funmedia/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/fun/funmedia/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/fun/funmedia/mapper/UserMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/fun/funmedia/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fun/funmedia/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/fun/funmedia/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fun/funmedia/mapper/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/fun/funmedia/pojo/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fun/funmedia/pojo/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/fun/funmedia/utils/SqlSessionUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fun/funmedia/utils/SqlSessionUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mappers/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mappers/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fun/funmedia/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fun/funmedia/mapper/UserMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis-config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/fun/funmedia/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/fun/funmedia/Test.class" afterDir="false" />
     </list>
@@ -39,8 +35,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Kotlin File" />
+        <option value="XSLT Stylesheet" />
+        <option value="Interface" />
+        <option value="mybatis-mapper" />
         <option value="Class" />
       </list>
     </option>
@@ -93,8 +91,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Test.TestLoginByParams">
-    <configuration name="Test.TestInsertByBean" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.DynamicTest.getEmpByCondition">
+    <configuration name="DynamicTest.getEmpByCondition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FunMedia" />
       <extension name="coverage">
         <pattern>
@@ -103,14 +101,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.fun.funmedia" />
-      <option name="MAIN_CLASS_NAME" value="com.fun.funmedia.Test" />
-      <option name="METHOD_NAME" value="TestInsertByBean" />
+      <option name="MAIN_CLASS_NAME" value="com.fun.funmedia.DynamicTest" />
+      <option name="METHOD_NAME" value="getEmpByCondition" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test.TestLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EmpTest.getDeptAndEmpById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FunMedia" />
       <extension name="coverage">
         <pattern>
@@ -119,14 +117,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.fun.funmedia" />
-      <option name="MAIN_CLASS_NAME" value="com.fun.funmedia.Test" />
-      <option name="METHOD_NAME" value="TestLogin" />
+      <option name="MAIN_CLASS_NAME" value="com.fun.funmedia.EmpTest" />
+      <option name="METHOD_NAME" value="getDeptAndEmpById" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test.TestLoginByMap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EmpTest.getDeptAndEmpByStep" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FunMedia" />
       <extension name="coverage">
         <pattern>
@@ -135,14 +133,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.fun.funmedia" />
-      <option name="MAIN_CLASS_NAME" value="com.fun.funmedia.Test" />
-      <option name="METHOD_NAME" value="TestLoginByMap" />
+      <option name="MAIN_CLASS_NAME" value="com.fun.funmedia.EmpTest" />
+      <option name="METHOD_NAME" value="getDeptAndEmpByStep" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test.TestLoginByParams" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EmpTest.getEmpAndDeptByEmpId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FunMedia" />
       <extension name="coverage">
         <pattern>
@@ -151,14 +149,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.fun.funmedia" />
-      <option name="MAIN_CLASS_NAME" value="com.fun.funmedia.Test" />
-      <option name="METHOD_NAME" value="TestLoginByParams" />
+      <option name="MAIN_CLASS_NAME" value="com.fun.funmedia.EmpTest" />
+      <option name="METHOD_NAME" value="getEmpAndDeptByEmpId" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test.TestSelectName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EmpTest.getEmpAndDeptByStep" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FunMedia" />
       <extension name="coverage">
         <pattern>
@@ -167,8 +165,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.fun.funmedia" />
-      <option name="MAIN_CLASS_NAME" value="com.fun.funmedia.Test" />
-      <option name="METHOD_NAME" value="TestSelectName" />
+      <option name="MAIN_CLASS_NAME" value="com.fun.funmedia.EmpTest" />
+      <option name="METHOD_NAME" value="getEmpAndDeptByStep" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -176,11 +174,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Test.TestLoginByParams" />
-        <item itemvalue="JUnit.Test.TestInsertByBean" />
-        <item itemvalue="JUnit.Test.TestLoginByMap" />
-        <item itemvalue="JUnit.Test.TestLogin" />
-        <item itemvalue="JUnit.Test.TestSelectName" />
+        <item itemvalue="JUnit.DynamicTest.getEmpByCondition" />
+        <item itemvalue="JUnit.EmpTest.getDeptAndEmpByStep" />
+        <item itemvalue="JUnit.EmpTest.getDeptAndEmpById" />
+        <item itemvalue="JUnit.EmpTest.getEmpAndDeptByStep" />
+        <item itemvalue="JUnit.EmpTest.getEmpAndDeptByEmpId" />
       </list>
     </recent_temporary>
   </component>
@@ -197,7 +195,7 @@
       <workItem from="1684812745604" duration="2840000" />
       <workItem from="1684820693474" duration="1189000" />
       <workItem from="1684825020533" duration="7537000" />
-      <workItem from="1684893785456" duration="10485000" />
+      <workItem from="1684893785456" duration="27050000" />
     </task>
     <servers />
   </component>
@@ -216,16 +214,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://E:/mavenRepository/org/mybatis/mybatis/3.5.7/mybatis-3.5.7-sources.jar!/org/apache/ibatis/binding/MapperRegistry.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

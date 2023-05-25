@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fun.funmedia.mapper.EmpMapper">
+
+    <!--
+        字段名和属性名不一致的情况，如何处理映射关系
+        1，为查询的字段设置别名，和属性名保持一致
+        2，当字段符合MySOL的要求使用 ，而属性符合java的要求使用驼峰
+        此时可以在MyBatis的核心配置文件中设置一个全局配置，可以自动将下划线映射为驼峰
+        emp_id:empId emp_name:empName
+        3，使用resultMap自定义映射处理
+    -->
+    <resultMap id="empResultMap" type="Emp">
+        <id column="emp_id" property="empId"/>
+        <result column="emp_name" property="empName"/>
+        <result column="age" property="age"/>
+        <result column="gender" property="gender"/>
+    </resultMap>
+    <select id="getAllEmp" resultMap="empResultMap">
+        <!--select emp_id empId,emp_name empName,age,gender from f_emp-->
+        select * from f_emp
+    </select>
+
+    <select id="getAllEmpOld" resultType="Emp">
+        <!--select emp_id empId,emp_name empName,age,gender from f_emp-->
+        select * from f_emp
+    </select>
+
+    <!--级联方式处理-->
+    <resultMap id="EmpAndDeptOne" type="Emp">
+        <id column="emp_id" property="empId"/>
+        <result column="emp_name" property="empName"/>
+        <result column="age" property="age"/>
+        <result column="gender" property="gender"/>
+        <result column="dept_id" property="dept.deptId"/>
+        <result column="dept_name" property="dept.deptName"/>
+    </resultMap>
+    <resultMap id="EmpAndDept" type="Emp">
+        <id column="emp_id" property="empId"/>
+        <result column="emp_name" property="empName"/>
+        <result column="age" property="age"/>
+        <result column="gender" property="gender"/>
+        <!--association:处理多对一的映射关系(处理实体类类型的属性)-->
+        <association property="dept" javaType="Dept">
+            <id column="dept_id" property="deptId"/>
+            <result column="dept_name" property="deptName"/>
+        </association>
+    </resultMap>
+
+    <!--Emp getEmpAndDeptByEmpId(@Param("empId") Integer empId);-->
+    <select id="getEmpAndDeptByEmpId" resultMap="EmpAndDept">
+        select f_emp.*,f_dept.*
+        from f_emp
+        left join f_dept
+        on f_emp.dept_id = f_dept.dept_id
+        where f_emp.emp_id = #{empId}
+    </select>
+
+    <resultMap id="EmpAndDeptStep" type="Emp">
+        <id column="emp_id" property="empId"/>
+        <result column="emp_name" property="empName"/>
+        <result column="age" property="age"/>
+        <result column="gender" property="gender"/>
+        <!--
+            property: 设置需要处理映射关系的属性的属性名
+            select: 设置分步查询的sql的唯一标识
+            column: 将查询出的某个字段作为分步查询的sqL的条件
+            fetchType：在开启延迟加载环境中，设置当前的分步加载是延迟加载还是立即加载
+        -->
+        <association property="dept"
+                     select="com.fun.funmedia.mapper.DeptMapper.getEmpAndDeptStepTwo"
+                     column="dept_id"
+                     fetchType="lazy"
+        />
+    </resultMap>
+
+    <!--Emp getEmpAndDeptStepOne(@Param("empId") Integer empId);-->
+    <select id="getEmpAndDeptStepOne" resultMap="EmpAndDeptStep">
+        select * from f_emp where emp_id = #{empId}
+    </select>
+
+    <!--List<Emp> getDeptAndEmpStepTwo(@Param("dept_id") Integer dept_id);-->
+    <select id="getDeptAndEmpStepTwo" resultType="Emp">
+        select * from f_emp where dept_id = #{dept_id}
+    </select>
+</mapper>

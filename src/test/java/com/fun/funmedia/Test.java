@@ -100,8 +100,73 @@ public class Test {
     public void TestLoginByParams() {
         SqlSession sqlSession = SqlSessionUtil.getSqlSession();
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);
-        User user = mapper.checkLogin("xsx","123123");
+        User user = mapper.checkLoginByParams("xsx","123123");
         System.out.println("执行结果" + user);
+        sqlSession.close();
+    }
+
+    @org.junit.Test
+    public void TestCount() {
+        SqlSession sqlSession = SqlSessionUtil.getSqlSession();
+        UserMapper mapper = sqlSession.getMapper(UserMapper.class);
+        int result = mapper.countUser();
+        System.out.println("执行结果" + result);
+        sqlSession.close();
+    }
+
+    @org.junit.Test
+    public void TestUserToMap() {
+        SqlSession sqlSession = SqlSessionUtil.getSqlSession();
+        UserMapper mapper = sqlSession.getMapper(UserMapper.class);
+        Map<String, Object> result = mapper.getUserByIdToMap(1);
+        System.out.println("执行结果" + result);
+        sqlSession.close();
+    }
+
+    @org.junit.Test
+    public void TestAllUserToMap() {
+        SqlSession sqlSession = SqlSessionUtil.getSqlSession();
+        UserMapper mapper = sqlSession.getMapper(UserMapper.class);
+        Map<String, Object> result = mapper.getAllUserToMap();
+        System.out.println("执行结果" + result);
+        sqlSession.close();
+    }
+
+    @org.junit.Test
+    public void TestLike() {
+        SqlSession sqlSession = SqlSessionUtil.getSqlSession();
+        UserMapper mapper = sqlSession.getMapper(UserMapper.class);
+        List<User> result = mapper.getUserByLike("a");
+        result.forEach(System.out::println);
+        sqlSession.close();
+    }
+
+    @org.junit.Test
+    public void TestDeleteMore() {
+        SqlSession sqlSession = SqlSessionUtil.getSqlSession();
+        UserMapper mapper = sqlSession.getMapper(UserMapper.class);
+        int result = mapper.deleteMoreUser("6,7");
+        System.out.println("执行结果" + result);
+        sqlSession.close();
+    }
+
+    @org.junit.Test
+    public void getAllUserByTable() {
+        SqlSession sqlSession = SqlSessionUtil.getSqlSession();
+        UserMapper mapper = sqlSession.getMapper(UserMapper.class);
+        List<User> f_user = mapper.getAllUserByTable("f_user");
+        f_user.forEach(System.out::println);
+        sqlSession.close();
+    }
+
+    @org.junit.Test
+    public void TestInsertUserGetId() {
+        SqlSession sqlSession = SqlSessionUtil.getSqlSession();
+        UserMapper mapper = sqlSession.getMapper(UserMapper.class);
+        User user = new User(null, "xsx", "123123", 22, "男", "123123@qq.com");
+        mapper.insertUserGetId(user);
+        System.out.println("执行结果" + user);
+        System.out.println("执行结果" + user.getId());
         sqlSession.close();
     }
 }
