@@ -3,14 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="496fb595-ce11-43e2-9ebe-e04e01e67f1e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fun/funmedia/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fun/funmedia/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/fun/funmedia/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/fun/funmedia/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/fun/funmedia/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fun/funmedia/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/fun/funmedia/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fun/funmedia/mapper/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/fun/funmedia/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fun/funmedia/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/fun/funmedia/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/fun/funmedia/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fun/funmedia/mapper/DynamicMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fun/funmedia/mapper/DynamicMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/fun/funmedia/mapper/DynamicMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/fun/funmedia/mapper/DynamicMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fun/funmedia/DynamicTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fun/funmedia/DynamicTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +86,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DynamicTest.getEmpByCondition">
+  <component name="RunManager" selected="JUnit.DynamicTest.deleteMoreEmp">
+    <configuration name="DynamicTest.deleteMoreEmp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FunMedia" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fun.funmedia.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.fun.funmedia" />
+      <option name="MAIN_CLASS_NAME" value="com.fun.funmedia.DynamicTest" />
+      <option name="METHOD_NAME" value="deleteMoreEmp" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DynamicTest.getEmpByCondition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FunMedia" />
       <extension name="coverage">
@@ -103,6 +114,22 @@
       <option name="PACKAGE_NAME" value="com.fun.funmedia" />
       <option name="MAIN_CLASS_NAME" value="com.fun.funmedia.DynamicTest" />
       <option name="METHOD_NAME" value="getEmpByCondition" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DynamicTest.insertMoreEmp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FunMedia" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fun.funmedia.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.fun.funmedia" />
+      <option name="MAIN_CLASS_NAME" value="com.fun.funmedia.DynamicTest" />
+      <option name="METHOD_NAME" value="insertMoreEmp" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -140,45 +167,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EmpTest.getEmpAndDeptByEmpId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FunMedia" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.fun.funmedia.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.fun.funmedia" />
-      <option name="MAIN_CLASS_NAME" value="com.fun.funmedia.EmpTest" />
-      <option name="METHOD_NAME" value="getEmpAndDeptByEmpId" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EmpTest.getEmpAndDeptByStep" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FunMedia" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.fun.funmedia.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.fun.funmedia" />
-      <option name="MAIN_CLASS_NAME" value="com.fun.funmedia.EmpTest" />
-      <option name="METHOD_NAME" value="getEmpAndDeptByStep" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DynamicTest.deleteMoreEmp" />
+        <item itemvalue="JUnit.DynamicTest.insertMoreEmp" />
         <item itemvalue="JUnit.DynamicTest.getEmpByCondition" />
         <item itemvalue="JUnit.EmpTest.getDeptAndEmpByStep" />
         <item itemvalue="JUnit.EmpTest.getDeptAndEmpById" />
-        <item itemvalue="JUnit.EmpTest.getEmpAndDeptByStep" />
-        <item itemvalue="JUnit.EmpTest.getEmpAndDeptByEmpId" />
       </list>
     </recent_temporary>
   </component>
@@ -195,7 +190,7 @@
       <workItem from="1684812745604" duration="2840000" />
       <workItem from="1684820693474" duration="1189000" />
       <workItem from="1684825020533" duration="7537000" />
-      <workItem from="1684893785456" duration="27050000" />
+      <workItem from="1684893785456" duration="33609000" />
     </task>
     <servers />
   </component>
